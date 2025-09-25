@@ -1,0 +1,56 @@
+[
+  {
+    "table_name": "Employees",
+    "description": "Stores employee details",
+    "columns": {
+      "EmployeeID": "INT PRIMARY KEY",
+      "FirstName": "VARCHAR(50)",
+      "LastName": "VARCHAR(50)",
+      "DepartmentID": "INT FOREIGN KEY REFERENCES Departments(DepartmentID)",
+      "JoinDate": "DATE",
+      "BaseSalary": "DECIMAL(10,2)",
+      "IsActive": "BIT"
+    }
+  },
+  {
+    "table_name": "Departments",
+    "description": "Stores department information",
+    "columns": {
+      "DepartmentID": "INT PRIMARY KEY",
+      "DepartmentName": "VARCHAR(100)"
+    }
+  },
+  {
+    "table_name": "Attendance",
+    "description": "Tracks employee attendance",
+    "columns": {
+      "AttendanceID": "INT PRIMARY KEY",
+      "EmployeeID": "INT FOREIGN KEY REFERENCES Employees(EmployeeID)",
+      "Date": "DATE",
+      "IsPresent": "BIT"
+    }
+  },
+  {
+    "table_name": "Payroll",
+    "description": "Stores monthly payroll records",
+    "columns": {
+      "PayrollID": "INT PRIMARY KEY",
+      "EmployeeID": "INT FOREIGN KEY REFERENCES Employees(EmployeeID)",
+      "Month": "INT",
+      "Year": "INT",
+      "GrossSalary": "DECIMAL(10,2)",
+      "Deductions": "DECIMAL(10,2)",
+      "NetSalary": "DECIMAL(10,2)",
+      "ProcessedDate": "DATETIME"
+    }
+  },
+  {
+    "table_name": "Deductions",
+    "description": "Stores deduction rules",
+    "columns": {
+      "DeductionID": "INT PRIMARY KEY",
+      "DeductionName": "VARCHAR(100)",
+      "Percentage": "DECIMAL(5,2)"
+    }
+  }
+]

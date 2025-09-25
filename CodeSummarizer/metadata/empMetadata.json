@@ -1,0 +1,11 @@
+{
+  "table_name": "employees",
+  "description": "Stores employee details including salary and department",
+  "columns": {
+    "employee_id": "INT PRIMARY KEY",
+    "name": "VARCHAR(100)",
+    "department_id": "INT",
+    "salary": "DECIMAL(10,2)",
+    "last_updated": "TIMESTAMP"
+  }
+}

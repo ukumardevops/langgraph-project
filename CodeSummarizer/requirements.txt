@@ -1,0 +1,9 @@
+langgraph
+langchain
+langchain-community
+langchain-groq
+groq
+sqlparse 
+javalang
+asttokens
+qdrant-client
