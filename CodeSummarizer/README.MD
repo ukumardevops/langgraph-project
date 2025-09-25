@@ -94,6 +94,10 @@ Also supports:
 - Qdrant: Stores chunk embeddings for search
 - LangChain: Embedding + vector store integration
 
+🛠️ Langgraph Flow
+
+<IPython.core.display.Image object>
+
 🧪 Testing
 Supports:
 
@@ -107,3 +111,4 @@ Supports:
 - Add semantic search: vector_store.similarity_search("Which block updates salary?")
 - Add Langflow JSON for visual orchestration
 - Add audit trace: link chunks to table usage
+
