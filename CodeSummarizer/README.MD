@@ -96,7 +96,7 @@ Also supports:
 
 🛠️ Langgraph Flow
 
-<IPython.core.display.Image object>
+![alt text](image.png)
 
 🧪 Testing
 Supports:
@@ -111,4 +111,5 @@ Supports:
 - Add semantic search: vector_store.similarity_search("Which block updates salary?")
 - Add Langflow JSON for visual orchestration
 - Add audit trace: link chunks to table usage
+
 
