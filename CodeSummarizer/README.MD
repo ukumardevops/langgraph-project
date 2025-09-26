@@ -98,6 +98,10 @@ Also supports:
 
 ![alt text](image.png)
 
+🛠️ Additional Semantic Search to the flow
+
+![alt text](image-1.png)
+
 🧪 Testing
 Supports:
 
@@ -108,8 +112,8 @@ Supports:
 
 🧩 Extensibility
 
-- Add semantic search: vector_store.similarity_search("Which block updates salary?")
 - Add Langflow JSON for visual orchestration
 - Add audit trace: link chunks to table usage
+
 
 
